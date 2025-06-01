@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html dir="rtl" lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مركز المراجعة المتكاملة </title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>مركز المراجعة المتكاملة</title>
   <style>
     body {
       margin: 0;
@@ -25,6 +25,16 @@
       margin: 10px 0 0;
       font-size: 26px;
     }
+    .lang-btn {
+      margin-top: 10px;
+      background: #fff;
+      color: #003366;
+      border: 1px solid #003366;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-family: 'Cairo', sans-serif;
+    }
     .content {
       padding: 40px 20px;
       max-width: 900px;
@@ -41,38 +51,39 @@
       color: #003366;
       margin-top: 0;
     }
-    .contact-form label {
-      display: block;
-      margin: 8px 0 4px;
-      font-weight: bold;
-      color: #003366;
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-    .contact-form input,
-    .contact-form textarea {
+    .service-box {
+      flex: 1 1 220px;
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .service-box div:first-child {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    form.contact-form input,
+    form.contact-form textarea {
       width: 100%;
       padding: 10px;
-      font-size: 15px;
+      margin-bottom: 10px;
       border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-bottom: 12px;
-      transition: border 0.3s ease;
+      border-radius: 4px;
+      font-family: 'Cairo', sans-serif;
     }
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      border-color: #003366;
-      outline: none;
-    }
-    .contact-form button {
+    form.contact-form button {
       background-color: #003366;
       color: white;
-      padding: 12px 25px;
+      padding: 10px 20px;
       border: none;
-      border-radius: 6px;
+      border-radius: 4px;
       cursor: pointer;
-      font-size: 16px;
-    }
-    .contact-form button:hover {
-      background-color: #005599;
     }
     footer {
       background: #003366;
@@ -84,29 +95,53 @@
   </style>
 </head>
 <body>
+  <div style="position:fixed;top:20px;right:20px;z-index:1000;">
+    <a href="index_en.html" style="background:#003366;color:white;padding:8px 16px;border-radius:6px;text-decoration:none;font-size:14px;">English</a>
+  </div>
+
   <header>
-    <img src="شعار المركز (2).png" alt="شعار المركز">
-    <h1> مركز المراجعة المتكاملة  </h1>
-    <h2 style="font-size:16px; font-weight: normal;">خدمات المراجعة الداخلية باحترافية</h2>
+    <img src="شعار المركز (2).png" alt="شعار المركز" />
+<h1>مركز المراجعة المتكاملة</h1>
+<h2 style="font-size:16px; font-weight: normal;">Integrated Audit Center</h2>
+<p style="font-size:18px; margin-top:8px;">خدمات المراجعة الداخلية باحترافية</p>
+    
   </header>
 
   <div class="content">
     <div class="section">
+      <h2>من نحن</h2>
+      <p>
+        مركز المراجعة المتكاملة هو جهة استشارية متخصصة في تقديم خدمات المراجعة الداخلية والامتثال وتقييم المخاطر للمؤسسات في القطاعين العام والخاص، وفق أعلى المعايير المهنية بإشراف مراجع داخلي معتمد (CIA).
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>رؤيتنا ورسالتنا</h2>
+      <p><strong>الرؤية:</strong> الريادة في تطوير مهنة المراجعة الداخلية في العالم العربي.</p>
+      <p><strong>الرسالة:</strong> تقديم خدمات مراجعة مهنية تعزز الحوكمة وتقليل المخاطر وتحقيق القيمة للعملاء.</p>
+    </div>
+
+    <div class="section">
+      <h2>خدماتنا</h2>
+      <div class="services-grid">
+        <div class="service-box"><div>🛡️</div><div>المراجعة الداخلية الشاملة</div></div>
+        <div class="service-box"><div>📊</div><div>تقييم وإدارة المخاطر</div></div>
+        <div class="service-box"><div>⚖️</div><div>مراجعة الامتثال التنظيمي</div></div>
+        <div class="service-box"><div>📋</div><div>بناء الأدلة والسياسات والإجراءات</div></div>
+        <div class="service-box"><div>✅</div><div>تقديم جميع أعمال المراجعة الداخلية</div></div>
+      </div>
+    </div>
+
+    <div class="section">
       <h2>تواصل معنا</h2>
       <p>
-        البريد الإلكتروني: integrated_audit@outlook.sa<br>
-        العنوان: الرياض - المملكة العربية السعودية
+        البريد الإلكتروني: integrated_audit@outlook.sa<br/>
+        العنوان: الرياض، المملكة العربية السعودية
       </p>
-      <form action="mailto:integrated_audit@outlook.sa" method="post" enctype="text/plain" class="contact-form">
-        <label for="name">الاسم:</label>
-        <input type="text" id="name" name="الاسم" placeholder="الاسم" required>
-
-        <label for="email">البريد الإلكتروني:</label>
-        <input type="email" id="email" name="البريد الإلكتروني" placeholder="البريد الإلكتروني" required>
-
-        <label for="message">الرسالة:</label>
-        <textarea id="message" name="الرسالة" rows="5" placeholder="رسالتك" required></textarea>
-
+      <form class="contact-form" action="mailto:integrated_audit@outlook.sa" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="الاسم" required>
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        <textarea name="message" rows="5" placeholder="رسالتك" required></textarea>
         <button type="submit">إرسال</button>
       </form>
     </div>
